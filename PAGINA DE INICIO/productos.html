@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+    <title>productos</title>
+    <link rel="stylesheet" href="css/Producto.css" />
+</head>
+
+<body>
+
+
+    <header>
+        <div class="container-header">
+            <div class="logo">
+                <a href="#"><img src="img/logo3.0.png" alt="Logo Inka Textil" /></a>
+            </div>
+
+            <nav class="menu-below-logo">
+                <ul>
+                    <li><a href="principal.html">Home</a></li>
+                    <li><a href="nosotros.html">Nosostros</a></li>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="catalogo.html">Catalogo</a></li>
+                    <li><a href="Carrito.html">Carrito</a></li>
+                    <li><a href="cuenta.html">Mi Cuenta</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-search">
+                <input type="text" placeholder="Buscar productos..." aria-label="Buscar productos" />
+                <button type="submit" aria-label="Buscar">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <aside class="filters-sidebar">
+            <h2>Filtros:</h2>
+            <div class="filter-group">
+                <select>
+                    <option value="">Categoria</option>
+                    <option value="categoria1">Categoría 1</option>
+                    <option value="categoria2">Categoría 2</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <select>
+                    <option value="">Tallas</option>
+                    <option value="tallaS">Talla S</option>
+                    <option value="tallaM">Talla M</option>
+                    <option value="tallaL">Talla L</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <select>
+                    <option value="">Colores</option>
+                    <option value="colorRojo">Color Rojo</option>
+                    <option value="colorAzul">Color Azul</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <select>
+                    <option value="">Material</option>
+                    <option value="materialAlgodon">Algodón</option>
+                    <option value="materialLana">Lana</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <select>
+                    <option value="">Precio</option>
+                    <option value="precio1">Hasta S/.50</option>
+                    <option value="precio2">S/.50 - S/.100</option>
+                </select>
+            </div>
+        </aside>
+
+        <section class="products-section">
+            <h2 class="section-title">PRODUCTOS</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="img/Chaleco_de_oveja.webp" alt="Chaleco de oveja">
+                    <h3>Chaleco de oveja</h3>
+                    <p>S/. 80.00</p>
+                </div>
+                <div class="product-card">
+                    <img src="img/Sombrero.webp" alt="Sombrero redondo">
+                    <h3>Sombrero redondo</h3>
+                    <p>S/. 50.00</p>
+                </div>
+                <div class="product-card">
+                    <img src="img/PONCHO.webp" alt="Poncho de alpaca">
+                    <h3>Poncho de alpaca</h3>
+                    <p>S/. 95.00</p>
+                </div>
+                <div class="product-card">
+                    <img src="img/capa_de_oveja.webp" alt="Capa de oveja">
+                    <h3>Capa de oveja</h3>
+                    <p>S/. 85.00</p>
+                </div>
+            </div>
+
+            <div class="discount-banner">
+                <div class="discount-content">
+                    <span class="sale-text">HASTA</span>
+                    <span class="discount-percentage">SALE 70%</span>
+                    <span class="discount-note">DSCTO</span>
+                    <span class="discount-info">EN MILES <br> DE PRODUCTOS <br> 25 DIC AL 31 ENE</span>
+                </div>
+            </div>
+
+            <div class="product-grid second-row">
+                <div class="product-card">
+                    <img src="img/chaleco_TKC.png" alt="Chaleco de oveja TKC">
+                    <h3>Chaleco de oveja TKC</h3>
+                    <p>S/. 90.00</p>
+                </div>
+                <div class="product-card">
+                    <img src="img/Chaleco_de_oveja.webp" alt="Chaleco de ovejas">
+                    <h3>Chaleco de ovejas</h3>
+                    <p>S/. 88.00</p>
+                </div>
+                <div class="product-card">
+                    <img src="img/CHALECO_OVEJA.png" alt="Chaleco de oveja POC">
+                    <h3>Chaleco de oveja POC</h3>
+                    <p>S/. 90.00</p>
+                </div>
+                <div class="product-card">
+                    <img src="img/CHALECO_UWO.png" alt="Chaleco de oveja UWO">
+                    <h3>Chaleco de oveja UWO</h3>
+                    <p>S/. 90.00</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="img/logo3.0.png" alt="Logo Inka Textil" />
+            </div>
+            <div class="footer-section">
+                <h4>ACERCA DE</h4>
+                <ul>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Políticas de privacidad</a></li>
+                    <li><a href="#">Políticas de cookies</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>CANALES DE ATENCIÓN</h4>
+                <ul>
+                    <li>Instagram: @inkatextil</li>
+                    <li><a href="https://www.facebook.com/InkaTextilSAC">Facebook: InkaTextil Oficial</a></li>
+                    <li>WhatsApp: 999-888-777</li>
+                    <li>Email: correo.inkatextil@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>TUS PEDIDOS</h4>
+                <ul>
+                    <li><a href="#">Pedidos</a></li>
+                    <li><a href="#">Sigue tu pedido</a></li>
+                    <li><a href="#">Cambios y devoluciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-section suscribe">
+                <h4>SUSCRÍBETE</h4>
+                <p>Para recibir ofertas y novedades</p>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Tu correo electrónico" required />
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Inkatextil ©2025 Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace()
+    </script>
+</body>
+
+</html>
