@@ -6,30 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://unpkg.com/feather-icons"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
-    <title>productos</title>
-    <link rel="stylesheet" href="css/Producto.css" />
+    <title>Inka Textil</title>
+    <link rel="stylesheet" href="css/Producto copy 2.css" />
 </head>
 
 <body>
 
-
+    <!-- ENCABEZADO -->
     <header>
         <div class="container-header">
             <div class="logo">
                 <a href="#"><img src="img/logo3.0.png" alt="Logo Inka Textil" /></a>
             </div>
 
-            <nav class="menu-below-logo">
-                <ul>
-                    <li><a href="principal.html">Home</a></li>
-                    <li><a href="nosotros.html">Nosostros</a></li>
-                    <li><a href="historia.html">Historia</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="catalogo.html">Catalogo</a></li>
-                    <li><a href="Carrito.html">Carrito</a></li>
-                    <li><a href="cuenta.html">Mi Cuenta</a></li>
-                </ul>
-            </nav>
+        <nav class="menu-below-logo">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Historia</a></li>
+            <li class="dropdown">
+              <a href="#">Catálogo ▾</a>
+              <ul class="submenu">
+                <li><a href="Productos.html">Catálogo</a></li>
+                <li><a href="favoritos.html">Favoritos</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Carrito</a></li>
+            <li><a href="#">Mi Cuenta</a></li>
+          </ul>
+        </nav>
 
             <div class="header-search">
                 <input type="text" placeholder="Buscar productos..." aria-label="Buscar productos" />
@@ -43,7 +48,7 @@
             <h2>Filtros:</h2>
             <div class="filter-group">
                 <select>
-                    <option value="">Categoria</option>
+                    <option value="">Categoría</option>
                     <option value="categoria1">Categoría 1</option>
                     <option value="categoria2">Categoría 2</option>
                 </select>
@@ -59,8 +64,12 @@
             <div class="filter-group">
                 <select>
                     <option value="">Colores</option>
-                    <option value="colorRojo">Color Rojo</option>
-                    <option value="colorAzul">Color Azul</option>
+                    <option value="colorRojo">Celeste</option>
+                    <option value="colorAzul">Gris</option>
+                    <option value="colorRojo">Marron</option>
+                    <option value="colorAzul">Blanco</option>
+                    <option value="colorRojo">Verde oscuro</option>
+                    <option value="colorAzul">Multicolor</option>
                 </select>
             </div>
             <div class="filter-group">
@@ -82,26 +91,26 @@
         <section class="products-section">
             <h2 class="section-title">PRODUCTOS</h2>
             <div class="product-grid">
-                <div class="product-card">
+                <a href="Producto_Detalle1.html" class="product-card">
                     <img src="img/Chaleco_de_oveja.webp" alt="Chaleco de oveja">
                     <h3>Chaleco de oveja</h3>
                     <p>S/. 80.00</p>
-                </div>
-                <div class="product-card">
+                </a>
+                <a href="Producto_Detalle2.html" class="product-card">
                     <img src="img/Sombrero.webp" alt="Sombrero redondo">
                     <h3>Sombrero redondo</h3>
                     <p>S/. 50.00</p>
-                </div>
-                <div class="product-card">
+                </a>
+                <a href="Producto_Detalle3.html" class="product-card">
                     <img src="img/PONCHO.webp" alt="Poncho de alpaca">
                     <h3>Poncho de alpaca</h3>
                     <p>S/. 95.00</p>
-                </div>
-                <div class="product-card">
+                </a>
+                <a href="Producto_Detalle4.html" class="product-card">
                     <img src="img/capa_de_oveja.webp" alt="Capa de oveja">
                     <h3>Capa de oveja</h3>
                     <p>S/. 85.00</p>
-                </div>
+                </a>
             </div>
 
             <div class="discount-banner">
@@ -114,30 +123,32 @@
             </div>
 
             <div class="product-grid second-row">
-                <div class="product-card">
+                <a href="Producto_Detalle5.html" class="product-card">
                     <img src="img/chaleco_TKC.png" alt="Chaleco de oveja TKC">
                     <h3>Chaleco de oveja TKC</h3>
                     <p>S/. 90.00</p>
-                </div>
-                <div class="product-card">
-                    <img src="img/Chaleco_de_oveja.webp" alt="Chaleco de ovejas">
-                    <h3>Chaleco de ovejas</h3>
-                    <p>S/. 88.00</p>
-                </div>
-                <div class="product-card">
+                </a>
+                <a href="Producto_Detalle6.html" class="product-card">
+                    <img src="img/casaca_alpaca.jpg" alt="Chaleco de ovejas">
+                    <h3>Casaca de alpaca</h3>
+                    <p>S/. 80.00</p>
+                </a>
+                <a href="Producto_Detalle7.html" class="product-card">
                     <img src="img/CHALECO_OVEJA.png" alt="Chaleco de oveja POC">
                     <h3>Chaleco de oveja POC</h3>
                     <p>S/. 90.00</p>
-                </div>
-                <div class="product-card">
+                </a>
+                <a href="Producto_Detalle8.html" class="product-card">
                     <img src="img/CHALECO_UWO.png" alt="Chaleco de oveja UWO">
                     <h3>Chaleco de oveja UWO</h3>
                     <p>S/. 90.00</p>
-                </div>
+                </a>
             </div>
         </section>
     </main>
 
+
+    <!-- PIE DE PÁGINA -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-logo">
@@ -156,7 +167,7 @@
                 <h4>CANALES DE ATENCIÓN</h4>
                 <ul>
                     <li>Instagram: @inkatextil</li>
-                    <li><a href="https://www.facebook.com/InkaTextilSAC">Facebook: InkaTextil Oficial</a></li>
+                    <li>Facebook: InkaTextil Oficial</li>
                     <li>WhatsApp: 999-888-777</li>
                     <li>Email: correo.inkatextil@gmail.com</li>
                 </ul>
@@ -179,7 +190,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>Inkatextil ©2025 Todos los derechos reservados</p>
+            <p>Inkatextil ©2025 Todos los derechos reservados_Desarrollado por el grupo 04</p>
         </div>
     </footer>
 

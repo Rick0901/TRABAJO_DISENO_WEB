@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <title>Inka Textil</title>
+  <link rel="stylesheet" href="css/Producto copy 2.css" />
+  <link rel="stylesheet" href="css/botonF.css" />
+</head>
+
+<body>
+  <!-- ENCABEZADO -->
+  <header>
+    <div class="container-header">
+      <div class="logo">
+        <a href="#"><img src="img/logo3.0.png" alt="Logo Inka Textil" /></a>
+      </div>
+
+      <nav class="menu-below-logo">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Historia</a></li>
+          <li class="dropdown">
+            <a href="#">Catálogo ▾</a>
+            <ul class="submenu">
+              <li><a href="Productos.html">Catálogo</a></li>
+              <li><a href="favoritos.html">Favoritos</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Carrito</a></li>
+          <li><a href="#">Mi Cuenta</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-search">
+        <input type="text" placeholder="Buscar productos..." aria-label="Buscar productos" />
+        <button type="submit" aria-label="Buscar">🔍</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN DETALLE -->
+  <main class="product-main">
+    <h1 class="product-title">DETALLE DE PRODUCTO</h1>
+    <section class="product-detail">
+      <div class="product-gallery">
+        <img src="img/Chaleco_oveja1.png" alt="Mini 1" />
+        <img src="img/chaleco_oveja2.png" alt="Mini 2" />
+        <img src="img/chaleco_oveja3.webp" alt="Mini 3" />
+      </div>
+      <div class="product-image">
+        <img src="img/Chaleco_de_oveja.webp" alt="Chaleco de Oveja" />
+      </div>
+      <div class="product-info">
+        <h2>Chaleco de oveja 025</h2>
+        <p class="product-price">S/ 80.00</p>
+        <p class="product-description">
+          <strong>Descripción:</strong><br />
+          Chaleco cálido y acogedor hecho con lana de oveja natural, ideal para climas fríos. Presenta un diseño rústico con acabado suave y detalles artesanales.
+        </p>
+
+        <label for="color">Color:</label>
+        <select id="color">
+          <option>Celeste</option>
+        </select>
+
+        <label for="talla">Talla:</label>
+        <select id="talla">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+        </select>
+
+        <label for="cantidad">Cantidad:</label>
+        <div class="quantity-control">
+          <button type="button" id="decrease">-</button>
+          <input type="number" id="quantity" value="1" min="1" />
+          <button type="button" id="increase">+</button>
+        </div>
+
+        <button class="add-to-cart">Añadir al carrito</button>
+
+        <!-- BOTÓN DE FAVORITOS FUNCIONAL -->
+        <button
+          class="favorite-btn"
+          data-id="producto-001"
+          data-nombre="Chaleco de oveja 025"
+          data-precio="80.00"
+          data-imagen="img/Chaleco_de_oveja.webp"
+        >
+          ❤️ Agregar a favoritos
+        </button>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS RELACIONADOS -->
+    <section class="related-products">
+      <h2>Productos Relacionados</h2>
+      <div class="related-grid">
+        <a href="Producto_Detalle5.html" class="related-card">
+          <img src="img/chaleco_TKC.png" alt="TKC" />
+          <p>Chaleco de oveja TKC</p>
+          <span>S/ 90.00</span>
+        </a>
+        <a href="Producto_Detalle2.html" class="related-card">
+          <img src="img/Sombrero.webp" alt="ovejas" />
+          <p>Sombrero redondo</p>
+          <span>S/ 50.00</span>
+        </a>
+        <a href="Producto_Detalle7.html" class="related-card">
+          <img src="img/CHALECO_OVEJA.png" alt="POC" />
+          <p>Chaleco de oveja POC</p>
+          <span>S/ 90.00</span>
+        </a>
+        <a href="Producto_Detalle3.html" class="related-card">
+          <img src="img/PONCHO.webp" alt="UWO" />
+          <p>Poncho de alpaca</p>
+          <span>S/ 95.00</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="img/logo3.0.png" alt="Logo Inka Textil" />
+      </div>
+      <div class="footer-section">
+        <h4>ACERCA DE</h4>
+        <ul>
+          <li><a href="#">Preguntas frecuentes</a></li>
+          <li><a href="#">Políticas de privacidad</a></li>
+          <li><a href="#">Políticas de cookies</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>CANALES DE ATENCIÓN</h4>
+        <ul>
+          <li>Instagram: @inkatextil</li>
+          <li>Facebook: InkaTextil Oficial</li>
+          <li>WhatsApp: 999-888-777</li>
+          <li>Email: correo.inkatextil@gmail.com</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>TUS PEDIDOS</h4>
+        <ul>
+          <li><a href="#">Pedidos</a></li>
+          <li><a href="#">Sigue tu pedido</a></li>
+          <li><a href="#">Cambios y devoluciones</a></li>
+        </ul>
+      </div>
+      <div class="footer-section suscribe">
+        <h4>SUSCRÍBETE</h4>
+        <p>Para recibir ofertas y novedades</p>
+        <form action="#" method="post">
+          <input type="email" name="email" placeholder="Tu correo electrónico" required />
+          <button type="submit">Suscribirse</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Inkatextil ©2025 Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="js/favoritos.js"></script>
+  <script>
+    feather.replace();
+  </script>
+</body>
+</html>
