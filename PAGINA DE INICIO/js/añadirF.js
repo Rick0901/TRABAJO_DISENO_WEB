@@ -1,4 +1,4 @@
-// addToCart.js
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const btnAddToCart = document.querySelector(".add-to-cart");

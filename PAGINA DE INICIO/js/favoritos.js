@@ -111,9 +111,52 @@ function mostrarFavoritos() {
     contenedor.appendChild(div);
   });
 }
-
-// SIMULACIÓN DE AGREGAR AL CARRITO
 function agregarAlCarrito(producto, cantidad) {
-  console.log(`Agregado al carrito: ${producto.nombre} x ${cantidad}`);
-  // Aquí podrías usar localStorage o enviar al servidor según tu lógica
+  // Obtiene carrito actual
+  let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+  // Busca si ya existe el producto
+  const existente = carrito.find(item => item.id === producto.id);
+
+  if (existente) {
+    existente.cantidad += cantidad;
+  } else {
+    carrito.push({
+      id: producto.id,
+      nombre: producto.nombre,
+      imagen: producto.imagen,
+      precio: parseFloat(producto.precio),
+      cantidad: cantidad
+    });
+  }
+
+  // Guarda carrito actualizado
+  localStorage.setItem("carrito", JSON.stringify(carrito));
+
+function agregarAlCarrito(producto, cantidad) {
+  // Obtiene carrito actual del localStorage
+  let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+  // Verifica si ya existe el producto en el carrito
+  const existente = carrito.find(item => item.id === producto.id);
+
+  if (existente) {
+    existente.cantidad += cantidad;
+  } else {
+    carrito.push({
+      id: producto.id,
+      nombre: producto.nombre,
+      imagen: producto.imagen,
+      precio: parseFloat(producto.precio),
+      cantidad: cantidad
+    });
+  }
+
+  // Guarda carrito actualizado
+  localStorage.setItem("carrito", JSON.stringify(carrito));
+
+  // Muestra alerta
+  alert("Producto agregado al carrito correctamente.");
 }
+}
+

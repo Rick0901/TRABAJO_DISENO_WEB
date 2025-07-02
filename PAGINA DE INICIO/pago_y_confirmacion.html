@@ -39,8 +39,8 @@
           <li class="dropdown">
             <a href="#">Carrito ▾</a>
             <ul class="submenu">
-              <li><a href="Productos.html">Carrito</a></li>
-              <li><a href="favoritos.html">Pedidos</a></li>
+              <li><a href="Carrito.html">Carrito</a></li>
+              <li><a href="pedidos.html">Pedidos</a></li>
             </ul>
           <li class="dropdown">
             <a href="#">Mi Cuenta ▾</a>
@@ -70,13 +70,13 @@
         <h2>MEJORES OPCIONES DE ENTREGA</h2>
         <div class="opcion">
           <label>
-            <input type="radio" name="envio" value="domicilio" /> Entrega a domicilio
+            <input type="radio" name="envio" value="domicilio"  id="envio-domicilio"/> Entrega a domicilio
           </label>
           <input type="text" placeholder="Av. Venezuela 001, Chiclayo" />
         </div>
         <div class="opcion">
           <label>
-            <input type="radio" name="envio" value="tienda" checked /> Recogo en tienda
+            <input type="radio" name="envio" value="tienda" id="recojo-tienda" checked /> Recogo en tienda
           </label>
           <select>
             <option>Tienda 01: Av. Balta 001, Chiclayo</option>
@@ -107,7 +107,7 @@
         <p>PRODUCTOS (<span id="items-total"></span>): S/<span id="productos-total"></span></p>
         <p>DESCUENTOS (1): S/<span id="descuentos-total"></span></p>
         <p>TOTAL: S/<span id="total-final"></span></p>
-        <p>ENVÍO: Gratis</p>
+        <p>ENVÍO: S/<span id="envio-monto">0.00</span></p>
         <button class="btn-finalizar-compra">FINALIZAR COMPRA</button>
       </aside>
     </div>

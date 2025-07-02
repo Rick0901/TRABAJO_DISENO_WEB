@@ -5,29 +5,43 @@ body {
 .envio-main {
   max-width: 1200px;
   margin: 2rem auto;
+  padding: 0 1rem;
 }
 
 .envio-container {
   display: flex;
   gap: 2rem;
+  align-items: flex-start; /* Alinea las cajas arriba */
 }
 
-.opciones-envio,
-.medio-pago {
-  flex: 2;
+.opciones-envio {
+  flex: 1;
   border: 1px solid #ccc;
-  padding: 1rem;
+  padding: 1.5rem;
+  background: #c48a68;
+}
+
+.medio-pago {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+  background: #c48a68;
 }
 
 .opcion {
   margin-bottom: 1rem;
 }
 
+.medio-pago .pago-opcion {
+  margin-bottom: 0.8rem;
+}
+
 .resumen-compra {
-  flex: 1;
+  flex: 0.8; /* Un poco más estrecho que los otros */
   border: 1px solid #aaa;
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem;
+  background: #c48a68;
 }
 
 .resumen-compra img {
@@ -41,15 +55,60 @@ body {
 
 .btn-finalizar-compra {
   margin-top: 1rem;
-  background: #000;
+  background: #7a3f18;
   color: #fff;
   padding: 0.8rem 1.5rem;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-@media (max-width: 768px) {
-  .envio-container {
-    flex-direction: column;
-  }
+.btn-finalizar-compra:hover {
+  background: #a96a3f;
+}
+
+/* --- Responsive Header/Footer --- */
+@media (max-width: 992px) {
+    .container-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .menu-below-logo ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-search {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .suscribe form {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-search {
+        width: 95%;
+    }
+
+    .footer-section h4 {
+        font-size: 1em;
+    }
 }

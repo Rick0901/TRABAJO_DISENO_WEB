@@ -27,8 +27,10 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  margin: 15px 0;
+  display: block;     
+  margin: 15px auto;  
 }
+
 
 .login-box form {
   display: flex;
@@ -96,4 +98,48 @@
 
 .hidden {
   display: none;
+}
+/* --- Responsive Header/Footer --- */
+@media (max-width: 992px) {
+    .container-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .menu-below-logo ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-search {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .suscribe form {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-search {
+        width: 95%;
+    }
+
+    .footer-section h4 {
+        font-size: 1em;
+    }
 }

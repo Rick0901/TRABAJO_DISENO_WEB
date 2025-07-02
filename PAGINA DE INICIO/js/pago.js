@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-
-  // Carga el usuario actual
+  // Carga usuario actual
   const usuarioActual = JSON.parse(localStorage.getItem("usuarioActual"));
   const saludo = document.getElementById("saludo-envio");
   if (usuarioActual && usuarioActual.nombre) {
@@ -9,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Obtiene carrito
   const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-
   let subtotal = 0;
   let descuentos = 0;
 
@@ -21,13 +19,32 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("items-total").textContent = carrito.length;
   document.getElementById("productos-total").textContent = subtotal.toFixed(2);
   document.getElementById("descuentos-total").textContent = `-${descuentos.toFixed(2)}`;
-  document.getElementById("total-final").textContent = (subtotal - descuentos).toFixed(2);
 
-  // Botón finalizar compra
+  const envioMonto = document.getElementById("envio-monto");
+  const totalFinal = document.getElementById("total-final");
+
+  const recojo = document.getElementById("recojo-tienda");
+  const envioDomicilio = document.getElementById("envio-domicilio");
+
+  function actualizarTotal() {
+    let total = subtotal - descuentos;
+    if (recojo.checked) {
+      envioMonto.textContent = "0.00";
+    } else if (envioDomicilio.checked) {
+      envioMonto.textContent = "10.00";
+      total += 10;
+    }
+    totalFinal.textContent = total.toFixed(2);
+  }
+
+  recojo.addEventListener("change", actualizarTotal);
+  envioDomicilio.addEventListener("change", actualizarTotal);
+
+  actualizarTotal();
+
   const finalizar = document.querySelector(".btn-finalizar-compra");
   finalizar.addEventListener("click", () => {
     alert("¡Compra finalizada exitosamente!");
-    // Aquí limpiarías carrito o rediriges
+    // Aquí puedes limpiar localStorage, etc.
   });
-
 });

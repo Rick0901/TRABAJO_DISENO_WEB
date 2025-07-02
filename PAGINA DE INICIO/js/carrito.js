@@ -111,9 +111,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Llama a renderCarrito para mostrar datos iniciales
   renderCarrito();
-
-  const btnContinuar = document.querySelector(".btn-continuar-compra");
-  btnContinuar.addEventListener("click", () => {
-    window.location.href = "pago.html"; //redirige a pago.html
-  });
+//btn para continuar comprando redirige al catalogo
+ const btnContinuar = document.querySelector(".btn-continuar-compra");
+btnContinuar.addEventListener("click", () => {
+  window.location.href = "Productos.html"; // o principal.html según tu flujo
+});
+//btn para continuar comprando redirige al pago
+const btnIrAPagar = document.querySelector(".btn-ir-a-pagar");
+btnIrAPagar.addEventListener("click", () => {
+  window.location.href = "pago_y_confirmacion.html";
+});
 });
