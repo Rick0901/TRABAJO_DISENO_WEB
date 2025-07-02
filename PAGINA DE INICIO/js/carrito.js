@@ -112,12 +112,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Llama a renderCarrito para mostrar datos iniciales
   renderCarrito();
 
-  // Botón CONTINUAR COMPRA
   const btnContinuar = document.querySelector(".btn-continuar-compra");
   btnContinuar.addEventListener("click", () => {
-    alert("Compra finalizada. Gracias por comprar en Inka Textil");
-    localStorage.removeItem("carrito"); // Limpia carrito del localStorage
-    renderCarrito(); // Vuelve a renderizar carrito vacío
+    window.location.href = "pago.html"; //redirige a pago.html
   });
-
 });
