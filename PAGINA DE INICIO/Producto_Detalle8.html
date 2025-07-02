@@ -13,36 +13,54 @@
 
 <body>
 
-    <!-- ENCABEZADO -->
-    <header>
-        <div class="container-header">
-            <div class="logo">
-                <a href="#"><img src="img/logo3.0.png" alt="Logo Inka Textil" /></a>
-            </div>
+  <!-- ENCABEZADO -->
+  <header>
+    <div class="container-header">
+      <div class="logo">
+        <a href="#"><img src="img/logo3.0.png" alt="Logo Inka Textil" /></a>
+      </div>
 
-            <nav class="menu-below-logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Historia</a></li>
-                    <li class="dropdown">
-                        <a href="#">Catálogo ▾</a>
-                        <ul class="submenu">
-                            <li><a href="Productos.html">Catálogo</a></li>
-                            <li><a href="favoritos.html">Favoritos</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Carrito</a></li>
-                    <li><a href="#">Mi Cuenta</a></li>
-                </ul>
-            </nav>
+      <nav class="menu-below-logo">
+        <ul>
+          <li><a href="principal.html">Home</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li class="dropdown">
+            <a href="#">Historia ▾</a>
+            <ul class="submenu">
+              <li><a href="historia.html">Historia</a></li>
+              <li><a href="artesanos">Artesanos</a></li>
+            </ul>
+          <li class="dropdown">
+            <a href="#">Catálogo ▾</a>
+            <ul class="submenu">
+              <li><a href="Productos.html">Catálogo</a></li>
+              <li><a href="favoritos.html">Favoritos</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">Carrito ▾</a>
+            <ul class="submenu">
+              <li><a href="Productos.html">Carrito</a></li>
+              <li><a href="favoritos.html">Pedidos</a></li>
+            </ul>
+          <li class="dropdown">
+            <a href="#">Mi Cuenta ▾</a>
+            <ul class="submenu">
+              <li><a href="registrarse.html">Registrarse</a></li>
+              <li><a href="inicio_sesion.html">Iniciar sesión</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
 
-            <div class="header-search">
-                <input type="text" placeholder="Buscar productos..." aria-label="Buscar productos" />
-                <button type="submit" aria-label="Buscar">🔍</button>
-            </div>
-        </div>
-    </header>
+
+      <div class="header-search">
+        <input type="text" placeholder="Buscar productos..." aria-label="Buscar productos" />
+        <button type="submit" aria-label="Buscar">🔍</button>
+      </div>
+    </div>
+  </header>
+
 
     <main class="product-main">
         <h1 class="product-title">DETALLE DE PRODUCTO</h1>
@@ -87,13 +105,8 @@
                 <button class="add-to-cart">Añadir al carrito</button>
 
                 <!-- Botón de Favoritos -->
-                <button
-                    class="favorite-btn"
-                    data-id="uwo004"
-                    data-nombre="Chaleco de oveja UWO"
-                    data-precio="90.00"
-                    data-imagen="img/CHALECO_UWO.png"
-                >
+                <button class="favorite-btn" data-id="uwo004" data-nombre="Chaleco de oveja UWO" data-precio="90.00"
+                    data-imagen="img/CHALECO_UWO.png">
                     ❤️ Agregar a Favoritos
                 </button>
             </div>
@@ -177,6 +190,7 @@
     </script>
     <script src="js/script.js"></script>
     <script src="js/favoritos.js"></script>
+    <script src="js/añadirF.js"></script>
 
 </body>
 

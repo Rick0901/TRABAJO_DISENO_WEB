@@ -30,8 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // ⚠️ Aquí deberías validar clave real contra tu base de datos o localStorage
-    // Para este ejemplo, asumimos siempre correcto
+
 
     // Guarda el usuario activo en localStorage
     localStorage.setItem("usuarioActivo", JSON.stringify({ email }));

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,6 +11,7 @@
   <link rel="stylesheet" href="css/botonF.css" />
   <link rel="stylesheet" href="css/favoritos.css" />
 </head>
+
 <body class="pagina-favoritos">
   <!-- ENCABEZADO -->
   <header>
@@ -20,9 +22,14 @@
 
       <nav class="menu-below-logo">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Historia</a></li>
+          <li><a href="principal.html">Home</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li class="dropdown">
+            <a href="#">Historia ▾</a>
+            <ul class="submenu">
+              <li><a href="historia.html">Historia</a></li>
+              <li><a href="artesanos">Artesanos</a></li>
+            </ul>
           <li class="dropdown">
             <a href="#">Catálogo ▾</a>
             <ul class="submenu">
@@ -30,10 +37,22 @@
               <li><a href="favoritos.html">Favoritos</a></li>
             </ul>
           </li>
-          <li><a href="#">Carrito</a></li>
-          <li><a href="#">Mi Cuenta</a></li>
+          <li class="dropdown">
+            <a href="#">Carrito ▾</a>
+            <ul class="submenu">
+              <li><a href="Productos.html">Carrito</a></li>
+              <li><a href="favoritos.html">Pedidos</a></li>
+            </ul>
+          <li class="dropdown">
+            <a href="#">Mi Cuenta ▾</a>
+            <ul class="submenu">
+              <li><a href="registrarse.html">Registrarse</a></li>
+              <li><a href="inicio_sesion.html">Iniciar sesión</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
+
 
       <div class="header-search">
         <input type="text" placeholder="Buscar productos..." aria-label="Buscar productos" />
@@ -41,6 +60,7 @@
       </div>
     </div>
   </header>
+
   <br>
 
   <!-- CONTENIDO PRINCIPAL -->
@@ -101,4 +121,5 @@
   <script src="js/script.js"></script>
   <script>feather.replace();</script>
 </body>
+
 </html>

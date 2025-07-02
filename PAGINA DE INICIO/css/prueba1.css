@@ -31,7 +31,7 @@ img {
 /* --- HEADER --- */
 header {
     background-color: #BB8362;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -156,7 +156,7 @@ footer.footer {
 
 .footer-section ul li a:hover {
     text-decoration: underline;
-    color:#AF9087;
+    color: #AF9087;
 }
 
 .suscribe p {
@@ -190,51 +190,51 @@ footer.footer {
 }
 
 .footer-bottom {
-    background-color:#BB8362;
+    background-color: #BB8362;
     text-align: center;
     padding: 12px 10px;
     font-size: 11px;
-    color:#000000;
+    color: #000000;
     margin-top: 10px;
 }
 
 
 /* Dropdown menu para "Catálogo" */
 .menu-below-logo .dropdown {
-  position: relative;
+    position: relative;
 }
 
 .menu-below-logo .submenu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #F8F4F1;
-  border: 1px solid #d1bfa8;
-  border-radius: 6px;
-  padding: 10px 0;
-  display: none;
-  min-width: 160px;
-  z-index: 999;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #F8F4F1;
+    border: 1px solid #d1bfa8;
+    border-radius: 6px;
+    padding: 10px 0;
+    display: none;
+    min-width: 160px;
+    z-index: 999;
 }
 
 .menu-below-logo .submenu li {
-  padding: 5px 15px;
-  white-space: nowrap;
+    padding: 5px 15px;
+    white-space: nowrap;
 }
 
 .menu-below-logo .submenu li a {
-  color: #000000;
-  font-size: 14px;
-  display: block;
+    color: #000000;
+    font-size: 14px;
+    display: block;
 }
 
 .menu-below-logo .submenu li a:hover {
-  background-color: #e4d2c5;
-  border-radius: 4px;
+    background-color: #e4d2c5;
+    border-radius: 4px;
 }
 
 .menu-below-logo .dropdown:hover .submenu {
-  display: block;
+    display: block;
 }
 
 /* --- Responsive Header/Footer --- */
@@ -245,9 +245,17 @@ footer.footer {
         gap: 15px;
     }
 
-    .menu-below-logo ul {
-        flex-wrap: wrap;
-        justify-content: center;
+    .menu-below-logo .submenu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #F8F4F1;
+        border: 1px solid #d1bfa8;
+        border-radius: 6px;
+        padding: 10px 0;
+        display: none;
+        min-width: 160px;
+        z-index: 999;
     }
 
     .header-search {

@@ -17,11 +17,17 @@
       <div class="logo">
         <a href="#"><img src="img/logo3.0.png" alt="Logo Inka Textil" /></a>
       </div>
+
       <nav class="menu-below-logo">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Historia</a></li>
+          <li><a href="principal.html">Home</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li class="dropdown">
+            <a href="#">Historia ▾</a>
+            <ul class="submenu">
+              <li><a href="historia.html">Historia</a></li>
+              <li><a href="artesanos">Artesanos</a></li>
+            </ul>
           <li class="dropdown">
             <a href="#">Catálogo ▾</a>
             <ul class="submenu">
@@ -29,10 +35,23 @@
               <li><a href="favoritos.html">Favoritos</a></li>
             </ul>
           </li>
-          <li><a href="#">Carrito</a></li>
-          <li><a href="#">Mi Cuenta</a></li>
+          <li class="dropdown">
+            <a href="#">Carrito ▾</a>
+            <ul class="submenu">
+              <li><a href="Productos.html">Carrito</a></li>
+              <li><a href="favoritos.html">Pedidos</a></li>
+            </ul>
+          <li class="dropdown">
+            <a href="#">Mi Cuenta ▾</a>
+            <ul class="submenu">
+              <li><a href="registrarse.html">Registrarse</a></li>
+              <li><a href="inicio_sesion.html">Iniciar sesión</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
+
+
       <div class="header-search">
         <input type="text" placeholder="Buscar productos..." aria-label="Buscar productos" />
         <button type="submit" aria-label="Buscar">🔍</button>
@@ -145,6 +164,7 @@
   <!-- SCRIPTS -->
   <script src="js/script.js"></script>
   <script src="js/favoritos.js"></script>
+  <script src="js/añadirF.js"></script>
   <script>feather.replace();</script>
 </body>
 </html>
