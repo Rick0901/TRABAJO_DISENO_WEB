@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <title>Kuna Tienda Tradicional</title>
+  <link rel="stylesheet" href="preguntas.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="container-header">
+      <div class="logo">
+        <a href="#"><img src="imagenes_p/logo3.0.png" alt="Logo Inka Textil" /></a>
+      </div>
+
+      <nav class="menu-below-logo">
+        <ul>
+          <li><a href="principal.html">Home</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li class="dropdown">
+            <a href="#">Historia ▾</a>
+            <ul class="submenu">
+              <li><a href="historia.html">Historia</a></li>
+              <li><a href="artesanos.html">Artesanos</a></li>
+            </ul>
+          <li class="dropdown">
+            <a href="#">Catálogo ▾</a>
+            <ul class="submenu">
+              <li><a href="Productos.html">Catálogo</a></li>
+              <li><a href="favoritos.html">Favoritos</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">Carrito ▾</a>
+            <ul class="submenu">
+              <li><a href="Productos.html">Carrito</a></li>
+              <li><a href="favoritos.html">Pedidos</a></li>
+            </ul>
+          <li class="dropdown">
+            <a href="#">Mi Cuenta ▾</a>
+            <ul class="submenu">
+              <li><a href="registrarse.html">Registrarse</a></li>
+              <li><a href="inicio_sesion.html">Iniciar sesión</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+
+      <div class="header-search">
+        <input type="text" placeholder="Buscar productos..." aria-label="Buscar productos" />
+        <button type="submit" aria-label="Buscar">🔍</button>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!-- preguntas.html -->
+  <main class="faq-main">
+    <aside class="faq-sidebar">
+      <ul>
+        <li class="active" data-target="frecuentes">PREGUNTAS FRECUENTES</li>
+        <li data-target="envios">ENVIOS</li>
+        <li data-target="devoluciones">DEVOLUCIONES</li>
+        <li data-target="cambios">CAMBIOS Y DEVOLUCIONES</li>
+        <li data-target="productos">PRODUCTOS</li>
+      </ul>
+    </aside>
+
+    <section class="faq-content">
+      <div class="faq-group" id="frecuentes">
+        <h2>PREGUNTAS FRECUENTES</h2>
+        <div class="faq-question">
+          <strong>¿Los productos son elaborados a mano por artesanos locales?</strong>
+          <p>Sí. Todos nuestros productos son confeccionados a mano por artesanos de comunidades del Cusco, quienes
+            utilizan técnicas ancestrales.</p>
+        </div>
+        <div class="faq-question">
+          <strong>¿Realizan envíos internacionales?</strong>
+          <p>Sí, realizamos envíos a nivel nacional e internacional. Trabajamos con operadores logísticos de confianza.
+          </p>
+        </div>
+        <div class="faq-question">
+          <strong>¿Cómo sé si un producto está disponible en mi talla o color?</strong>
+          <p>En cada ficha de producto verás opciones de tallas y colores disponibles en tiempo real.</p>
+        </div>
+      </div>
+
+      <div class="faq-group" id="envios" style="display:none">
+        <h2>ENVIOS</h2>
+        <div class="faq-question">
+          <strong>¿Cuánto tiempo tardan los envíos?</strong>
+          <p>Entre 3 y 5 días hábiles en Perú. Internacional varía según destino.</p>
+        </div>
+        <div class="faq-question">
+          <strong>¿Qué empresa realiza los envíos?</strong>
+          <p>Trabajamos con Serpost, Olva Courier y DHL.</p>
+        </div>
+        <div class="faq-question">
+          <strong>¿Puedo rastrear mi pedido?</strong>
+          <p>Sí. Te enviamos un código al correo tras el despacho.</p>
+        </div>
+      </div>
+
+      <div class="faq-group" id="devoluciones" style="display:none">
+        <h2>DEVOLUCIONES</h2>
+        <div class="faq-question">
+          <strong>¿Puedo devolver un producto si no me queda?</strong>
+          <p>Sí, dentro de los primeros 7 días y en perfecto estado.</p>
+        </div>
+        <div class="faq-question">
+          <strong>¿Qué productos no se pueden devolver?</strong>
+          <p>Accesorios íntimos o personalizados por higiene.</p>
+        </div>
+        <div class="faq-question">
+          <strong>¿Cuál es el proceso para devolver?</strong>
+          <p>Contáctanos con tu número de pedido y te guiamos.</p>
+        </div>
+      </div>
+
+      <div class="faq-group" id="cambios" style="display:none">
+        <h2>CAMBIOS Y DEVOLUCIONES</h2>
+        <div class="faq-question">
+          <strong>¿Puedo cambiar un producto por otra talla?</strong>
+          <p>Sí. En un plazo de 7 días. Envio corre por cuenta del cliente.</p>
+        </div>
+        <div class="faq-question">
+          <strong>¿Los cambios tienen costo?</strong>
+          <p>Solo si es fuera del país o zonas alejadas. En Lima es gratuito.</p>
+        </div>
+        <div class="faq-question">
+          <strong>¿Producto defectuoso?</strong>
+          <p>Si tiene fallas de fábrica lo cambiamos sin costo. Reporta en 48 horas.</p>
+        </div>
+      </div>
+
+      <div class="faq-group" id="productos" style="display:none">
+        <h2>PRODUCTOS</h2>
+        <div class="faq-question">
+          <strong>¿Cómo cuido las prendas?</strong>
+          <p>Lávalas a mano con agua fría y jabón suave.</p>
+        </div>
+        <div class="faq-question">
+          <strong>¿Cada producto es único?</strong>
+          <p>Sí. Al ser hechos a mano, cada uno tiene detalles únicos.</p>
+        </div>
+        <div class="faq-question">
+          <strong>¿De qué están hechas las prendas?</strong>
+          <p>Algodón orgánico, alpaca y lana seleccionados con cuidado.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <section class="contact-info">
+    <p>¿No encontraste la respuesta que buscabas? Escríbenos a <strong>correo.inkatextil@gmail.com</strong> y te
+      responderemos lo antes posible.</p>
+  </section>
+
+
+
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="imagenes_p/logo3.0.png" alt="Logo Inka Textil" />
+      </div>
+      <div class="footer-section">
+        <h4>ACERCA DE</h4>
+        <ul>
+          <li><a href="#">Preguntas frecuentes</a></li>
+          <li><a href="#">Políticas de privacidad</a></li>
+          <li><a href="#">Políticas de cookies</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>CANALES DE ATENCIÓN</h4>
+        <ul>
+          <li>Instagram: @inkatextil</li>
+          <li>Facebook: InkaTextil Oficial</li>
+          <li>WhatsApp: 999-888-777</li>
+          <li>Email: correo.inkatextil@gmail.com</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>TUS PEDIDOS</h4>
+        <ul>
+          <li><a href="#">Pedidos</a></li>
+          <li><a href="#">Sigue tu pedido</a></li>
+          <li><a href="#">Cambios y devoluciones</a></li>
+        </ul>
+      </div>
+      <div class="footer-section suscribe">
+        <h4>SUSCRÍBETE</h4>
+        <p>Para recibir ofertas y novedades</p>
+        <form action="#" method="post">
+          <input type="email" name="email" placeholder="Tu correo electrónico" required />
+          <button type="submit">Suscribirse</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Inkatextil ©2025 Todos los derechos reservados_Desarrollado por el grupo 04</p>
+    </div>
+  </footer>
+
+  <script>
+    feather.replace()
+  </script>
+  <script src="preguntas.js"></script>
+</body>
+
+</html>
