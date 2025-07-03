@@ -1,0 +1,188 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background-color: #b7744d;
+  padding: 15px 30px;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.menu-below-logo ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  align-items: center;
+}
+
+.menu-below-logo a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu-below-logo .submenu {
+  display: none;
+  position: absolute;
+  background-color: #a26238;
+  list-style: none;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.menu-below-logo .dropdown:hover .submenu {
+  display: block;
+}
+
+.menu-below-logo .submenu li a {
+  color: white;
+  padding: 5px 10px;
+  display: block;
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 2px;
+}
+
+.header-search input {
+  border: none;
+  padding: 6px 10px;
+  outline: none;
+}
+
+.header-search button {
+  background: none;
+  border: none;
+  padding: 0 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* TÍTULO PRINCIPAL */
+main h1,
+main h3 {
+  text-align: center;
+  margin: 30px 0 20px;
+  color: #8c4b2f;
+}
+
+/* CARDS DE PEDIDOS */
+.pedido-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.pedido-card h4 {
+  font-size: 18px;
+  color: #5a2e1f;
+}
+
+.pedido-card p {
+  margin: 5px 0;
+}
+
+.pedido-card ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #b7744d;
+  color: white;
+  margin-top: 40px;
+  padding: 40px 20px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+}
+
+.footer-logo img {
+  height: 50px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section.suscribe input {
+  padding: 6px;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 6px;
+}
+
+.footer-section.suscribe button {
+  margin-top: 6px;
+  padding: 6px;
+  background-color: #fff;
+  color: #b7744d;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding: 15px;
+  font-size: 14px;
+  background-color: #a26238;
+}

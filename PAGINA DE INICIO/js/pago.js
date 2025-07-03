@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Carga usuario actual
+  // Saludo usuario
   const usuarioActual = JSON.parse(localStorage.getItem("usuarioActual"));
   const saludo = document.getElementById("saludo-envio");
   if (usuarioActual && usuarioActual.nombre) {
     saludo.textContent = `HOLA ${usuarioActual.nombre.toUpperCase()}`;
   }
 
-  // Obtiene carrito
+  // Carga carrito
   const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
   let subtotal = 0;
   let descuentos = 0;
@@ -44,7 +44,41 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const finalizar = document.querySelector(".btn-finalizar-compra");
   finalizar.addEventListener("click", () => {
-    alert("¡Compra finalizada exitosamente!");
-    // Aquí puedes limpiar localStorage, etc.
+    Swal.fire({
+      title: "Procesando pago...",
+      text: "No cierre ni recargue la página",
+      icon: "info",
+      allowOutsideClick: false,
+      showConfirmButton: false,
+      timer: 2000,
+      didOpen: () => {
+        Swal.showLoading();
+      }
+    }).then(() => {
+      // Generar número de pedido
+      const numeroPedido = Math.floor(Math.random() * 900000) + 100000; // 6 dígitos
+      const pedido = {
+        numeroPedido,
+        fecha: new Date().toLocaleString(),
+        monto: totalFinal.textContent,
+        carrito
+      };
+
+      // Guardar pedido
+      let pedidos = JSON.parse(localStorage.getItem("pedidos")) || [];
+      pedidos.push(pedido);
+      localStorage.setItem("pedidos", JSON.stringify(pedidos));
+
+      Swal.fire({
+        title: "¡Pago exitoso!",
+        html: `N° Pedido: <strong>${numeroPedido}</strong><br>Total facturado: S/${pedido.monto}`,
+        icon: "success",
+        confirmButtonText: "Ver mis pedidos"
+      }).then(() => {
+        // Limpiar carrito y redirigir
+        localStorage.removeItem("carrito");
+        window.location.href = "pedidos.html";
+      });
+    });
   });
 });

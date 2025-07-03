@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://unpkg.com/feather-icons"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <link rel="stylesheet" href="css/prueba1.css" />
   <link rel="stylesheet" href="css/pago.css" />
   <title>Pago y Confirmación de Envío - Inka Textil</title>
@@ -12,11 +12,10 @@
 
 <body>
 
-  <!-- ENCABEZADO -->
   <header>
     <div class="container-header">
       <div class="logo">
-        <a href="#"><img src="img/logo3.0.png" alt="Logo Inka Textil" /></a>
+        <a href="principal.html"><img src="img/logo3.0.png" alt="Logo Inka Textil" /></a>
       </div>
 
       <nav class="menu-below-logo">
@@ -63,7 +62,7 @@
 
 
   <main class="envio-main">
-    <h1>PAGO Y CONFIRMACIÓN DE ENVÍO</h1>
+    <h3>PAGO Y CONFIRMACIÓN DE ENVÍO</h3>
 
     <div class="envio-container">
       <section class="opciones-envio">
@@ -85,21 +84,37 @@
         </div>
       </section>
 
-      <section class="medio-pago">
-        <h2>ELIJE TU MEDIO DE PAGO</h2>
-        <div class="pago-opcion">
-          <label><input type="radio" name="pago" value="yape" /> Yape</label>
-        </div>
-        <div class="pago-opcion">
-          <label><input type="radio" name="pago" value="plin" /> Plin</label>
-        </div>
-        <div class="pago-opcion">
-          <label><input type="radio" name="pago" value="efectivo" /> Pago Efectivo</label>
-        </div>
-        <div class="pago-opcion">
-          <label><input type="radio" name="pago" value="tarjeta" /> Tarjeta</label>
-        </div>
-      </section>
+     <section class="medio-pago">
+  <h2>ELIJE TU MEDIO DE PAGO</h2>
+
+  <div class="pago-opcion">
+    <label>
+      <input type="radio" name="pago" value="yape" />
+      <img src="img/yape.png" alt="Yape" class="icono-pago"> Yape
+    </label>
+  </div>
+
+  <div class="pago-opcion">
+    <label>
+      <input type="radio" name="pago" value="plin" />
+      <img src="img/images.jpg" alt="Plin" class="icono-pago"> Plin
+    </label>
+  </div>
+
+  <div class="pago-opcion">
+    <label>
+      <input type="radio" name="pago" value="efectivo" />
+      <img src="img/pagoEfectivo.jpg" alt="Pago Efectivo" class="icono-pago"> Pago Efectivo
+    </label>
+  </div>
+
+  <div class="pago-opcion">
+    <label>
+      <input type="radio" name="pago" value="tarjeta" />
+      <img src="img/tarjeta.png" alt="Tarjeta" class="icono-pago"> Tarjeta
+    </label>
+  </div>
+</section>
 
       <aside class="resumen-compra">
         <h3 id="saludo-envio">HOLA USUARIO</h3>
