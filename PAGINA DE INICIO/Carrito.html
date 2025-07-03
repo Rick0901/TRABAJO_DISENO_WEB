@@ -7,7 +7,6 @@
   <title>Carrito - Inka Textil</title>
   <link rel="stylesheet" href="css/prueba1.css" />
   <link rel="stylesheet" href="css/carrito.css" />
-  <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
@@ -17,7 +16,7 @@
   <header>
     <div class="container-header">
       <div class="logo">
-        <a href="#"><img src="img/logo3.0.png" alt="Logo Inka Textil" /></a>
+        <a href="principal.html"><img src="img/logo3.0.png" alt="Logo Inka Textil" /></a>
       </div>
 
       <nav class="menu-below-logo">
@@ -55,8 +54,8 @@
 
 
       <div class="header-search">
-        <input type="text" placeholder="Buscar productos..." aria-label="Buscar productos" />
-        <button type="submit" aria-label="Buscar">🔍</button>
+        <input type="text" id="busqueda-producto" placeholder="Buscar productos..." aria-label="Buscar productos" />
+        <button id="boton-buscar" type="button" aria-label="Buscar">🔍</button>
       </div>
     </div>
   </header>
@@ -84,13 +83,19 @@
 
 
       <aside class="carrito-resumen">
+        <img src="Img/usuario.png" class="user-img"
+          style="display: block; margin: 0 auto; width: 80px; height: 80px; object-fit: cover;" />
         <h3 id="saludo-carrito">HOLA USUARIO</h3>
         <div class="resumen-datos">
           <p>PRODUCTOS (<span id="total-items">0</span>) <span id="total-productos">S/0.00</span></p>
           <p>DESCUENTOS (<span id="total-descuentos">0</span>) <span id="monto-descuentos">S/0.00</span></p>
           <p><strong>TOTAL:</strong> <span id="total-final">S/0.00</span></p>
-          <button class="btn-continuar-compra">CONTINUAR COMPRANDO</button><br>
-          <button class="btn-ir-a-pagar">Ir a pagar</button>
+          <button class="btn-ir-a-pagar"
+            style="background-color: white; color: black; border: 2px solid #bb8362; padding: 12px 24px; font-size: 16px; border-radius: 8px; cursor: pointer;">IR
+            A PAGAR</button><br>
+          <button class="btn-continuar-compra"
+            style="background-color: white; color: black; border: 2px solid #bb8362; padding: 12px 24px; font-size: 16px; border-radius: 8px; cursor: pointer;">CONTINUAR
+            COMPRANDO</button><br>
         </div>
       </aside>
     </div>
@@ -106,10 +111,10 @@
       <div class="footer-section">
         <h4>ACERCA DE</h4>
         <ul>
-                    <li><a href="preguntas.html">Preguntas frecuentes</a></li>
-                    <li><a href="preguntas.html">Políticas de privacidad</a></li>
-                    <li><a href="preguntas.html">Políticas de cookies</a></li>
-                    <li><a href="preguntas.html">Términos y condiciones</a></li>
+          <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+          <li><a href="preguntas.html">Políticas de privacidad</a></li>
+          <li><a href="preguntas.html">Políticas de cookies</a></li>
+          <li><a href="preguntas.html">Términos y condiciones</a></li>
         </ul>
       </div>
       <div class="footer-section">
@@ -119,6 +124,7 @@
           <li>Facebook: InkaTextil Oficial</li>
           <li>WhatsApp: 999-888-777</li>
           <li>Email: correo.inkatextil@gmail.com</li>
+          <li><a href="contacto.html">Contáctanos</a></li>
         </ul>
       </div>
       <div class="footer-section">
@@ -145,7 +151,7 @@
 
   <script> feather.replace()</script>
   <script src="js/carrito.js"></script>
-
+  <script src="js/buscar.js"></script>
 </body>
 
 </html>

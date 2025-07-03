@@ -2,12 +2,12 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://unpkg.com/feather-icons"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
-    <title>Productos - Inka Textil</title>
-    <link rel="stylesheet" href="css/Producto copy 2.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <title>Productos - Inka Textil</title>
+  <link rel="stylesheet" href="css/Producto copy 2.css" />
 </head>
 
 <body>
@@ -54,116 +54,135 @@
 
 
       <div class="header-search">
-        <input type="text" placeholder="Buscar productos..." aria-label="Buscar productos" />
-        <button type="submit" aria-label="Buscar">🔍</button>
+        <input type="text" id="busqueda-producto" placeholder="Buscar productos..." aria-label="Buscar productos" />
+        <button id="boton-buscar" type="button" aria-label="Buscar">🔍</button>
       </div>
-    </div>
+
   </header>
 
 
-    <main class="main-content">
-        <aside class="filters-sidebar">
-            <h2>Filtros:</h2>
-            <div class="filter-group">
-                <select>
-                    <option value="">Categoría</option>
-                    <option value="categoria1">Categoría 1</option>
-                    <option value="categoria2">Categoría 2</option>
-                </select>
-            </div>
-            <div class="filter-group">
-                <select>
-                    <option value="">Tallas</option>
-                    <option value="tallaS">Talla S</option>
-                    <option value="tallaM">Talla M</option>
-                    <option value="tallaL">Talla L</option>
-                </select>
-            </div>
-            <div class="filter-group">
-                <select>
-                    <option value="">Colores</option>
-                    <option value="colorRojo">Celeste</option>
-                    <option value="colorAzul">Gris</option>
-                    <option value="colorRojo">Marron</option>
-                    <option value="colorAzul">Blanco</option>
-                    <option value="colorRojo">Verde oscuro</option>
-                    <option value="colorAzul">Multicolor</option>
-                </select>
-            </div>
-            <div class="filter-group">
-                <select>
-                    <option value="">Material</option>
-                    <option value="materialAlgodon">Algodón</option>
-                    <option value="materialLana">Lana</option>
-                </select>
-            </div>
-            <div class="filter-group">
-                <select>
-                    <option value="">Precio</option>
-                    <option value="precio1">Hasta S/.50</option>
-                    <option value="precio2">S/.50 - S/.100</option>
-                </select>
-            </div>
-        </aside>
+  <main class="main-content" style="background-color: #e9c6bc;">
+    <aside class="filters-sidebar">
+      <h2>Filtros:</h2>
+      <div class="filter-group">
+        <select id="filtro-categoria">
+          <option value="">Categoría</option>
+          <option value="categoria1">Colección Perú</option>
+          <option value="categoria2">Colección Incaica</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <select id="filtro-talla">
+          <option value="">Tallas</option>
+          <option value="tallaS">Talla S</option>
+          <option value="tallaM">Talla M</option>
+          <option value="tallaL">Talla L</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <select id="filtro-color">
+          <option value="">Colores</option>
+          <option value="colorCeleste">Celeste</option>
+          <option value="colorGris">Gris</option>
+          <option value="colorMarron">Marrón</option>
+          <option value="colorBlanco">Blanco</option>
+          <option value="colorVerdeOscuro">Verde oscuro</option>
+          <option value="colorMulticolor">Multicolor</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <select id="filtro-material">
+          <option value="">Material</option>
+          <option value="materialAlgodon">Algodón</option>
+          <option value="materialLana">Lana</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <select id="filtro-precio">
+          <option value="">Precio</option>
+          <option value="precio1">Hasta S/.50</option>
+          <option value="precio2">S/.50 - S/.100</option>
+        </select>
+      </div>
+    </aside>
 
-        <section class="products-section">
-            <h2 class="section-title">PRODUCTOS</h2>
-            <div class="product-grid">
-                <a href="Producto_Detalle1.html" class="product-card">
-                    <img src="img/Chaleco_de_oveja.webp" alt="Chaleco de oveja">
-                    <h3>Chaleco de oveja</h3>
-                    <p>S/. 80.00</p>
-                </a>
-                <a href="Producto_Detalle2.html" class="product-card">
-                    <img src="img/Sombrero.webp" alt="Sombrero redondo">
-                    <h3>Sombrero redondo</h3>
-                    <p>S/. 50.00</p>
-                </a>
-                <a href="Producto_Detalle3.html" class="product-card">
-                    <img src="img/PONCHO.webp" alt="Poncho de alpaca">
-                    <h3>Poncho de alpaca</h3>
-                    <p>S/. 95.00</p>
-                </a>
-                <a href="Producto_Detalle4.html" class="product-card">
-                    <img src="img/capa_de_oveja.webp" alt="Capa de oveja">
-                    <h3>Capa de oveja</h3>
-                    <p>S/. 85.00</p>
-                </a>
-            </div>
+    <section class="products-section">
+      <h2 class="section-title">PRODUCTOS</h2>
+      <div class="product-grid">
 
-            <div class="discount-banner">
-                <div class="discount-content">
-                    <span class="sale-text">HASTA</span>
-                    <span class="discount-percentage">SALE 70%</span>
-                    <span class="discount-note">DSCTO</span>
-                    <span class="discount-info">EN MILES <br> DE PRODUCTOS <br> 25 DIC AL 31 ENE</span>
-                </div>
-            </div>
+        <a href="Producto_Detalle1.html" class="product-card" data-categoria="categoria1" data-talla="tallaM"
+          data-color="colorMarron" data-material="materialLana" data-precio="precio2">
+          <img src="img/Chaleco_de_oveja.webp" alt="Chaleco de oveja">
+          <h3>Chaleco de oveja</h3>
+          <p>S/. 80.00</p>
+        </a>
 
-            <div class="product-grid second-row">
-                <a href="Producto_Detalle5.html" class="product-card">
-                    <img src="img/chaleco_TKC.png" alt="Chaleco de oveja TKC">
-                    <h3>Chaleco de oveja TKC</h3>
-                    <p>S/. 90.00</p>
-                </a>
-                <a href="Producto_Detalle6.html" class="product-card">
-                    <img src="img/casaca_alpaca.jpg" alt="Chaleco de ovejas">
-                    <h3>Casaca de alpaca</h3>
-                    <p>S/. 80.00</p>
-                </a>
-                <a href="Producto_Detalle7.html" class="product-card">
-                    <img src="img/CHALECO_OVEJA.png" alt="Chaleco de oveja POC">
-                    <h3>Chaleco de oveja POC</h3>
-                    <p>S/. 90.00</p>
-                </a>
-                <a href="Producto_Detalle8.html" class="product-card">
-                    <img src="img/CHALECO_UWO.png" alt="Chaleco de oveja UWO">
-                    <h3>Chaleco de oveja UWO</h3>
-                    <p>S/. 90.00</p>
-                </a>
-            </div>
-        </section>
-    </main>
+        <a href="Producto_Detalle2.html" class="product-card" data-categoria="categoria1" data-talla="tallaS"
+          data-color="colorBlanco" data-material="materialAlgodon" data-precio="precio1">
+          <img src="img/Sombrero.webp" alt="Sombrero redondo">
+          <h3>Sombrero redondo</h3>
+          <p>S/. 50.00</p>
+        </a>
+
+        <a href="Producto_Detalle3.html" class="product-card" data-categoria="categoria2" data-talla="tallaL"
+          data-color="colorMulticolor" data-material="materialLana" data-precio="precio2">
+          <img src="img/PONCHO.webp" alt="Poncho de alpaca">
+          <h3>Poncho de alpaca</h3>
+          <p>S/. 95.00</p>
+        </a>
+
+        <a href="Producto_Detalle4.html" class="product-card" data-categoria="categoria2" data-talla="tallaM"
+          data-color="colorGris" data-material="materialLana" data-precio="precio2">
+          <img src="img/capa_de_oveja.webp" alt="Capa de oveja">
+          <h3>Capa de oveja</h3>
+          <p>S/. 85.00</p>
+        </a>
+
+      </div>
+
+      <div class="discount-banner">
+        <div class="discount-content">
+          <span class="sale-text">HASTA</span>
+          <span class="discount-percentage">SALE 70%</span>
+          <span class="discount-note">DSCTO</span>
+          <span class="discount-info">EN MILES <br> DE PRODUCTOS <br> 25 DIC AL 31 ENE</span>
+        </div>
+      </div>
+
+      <div class="product-grid second-row">
+
+        <a href="Producto_Detalle5.html" class="product-card" data-categoria="categoria1" data-talla="tallaM"
+          data-color="colorCeleste" data-material="materialLana" data-precio="precio2">
+          <img src="img/chaleco_TKC.png" alt="Chaleco de oveja TKC">
+          <h3>Chaleco de oveja TKC</h3>
+          <p>S/. 90.00</p>
+        </a>
+
+        <a href="Producto_Detalle6.html" class="product-card" data-categoria="categoria2" data-talla="tallaS"
+          data-color="colorVerdeOscuro" data-material="materialLana" data-precio="precio2">
+          <img src="img/casaca_alpaca.jpg" alt="Chaleco de ovejas">
+          <h3>Casaca de alpaca</h3>
+          <p>S/. 80.00</p>
+        </a>
+
+        <a href="Producto_Detalle7.html" class="product-card" data-categoria="categoria1" data-talla="tallaM"
+          data-color="colorGris" data-material="materialLana" data-precio="precio2">
+          <img src="img/CHALECO_OVEJA.png" alt="Chaleco de oveja POC">
+          <h3>Chaleco de oveja POC</h3>
+          <p>S/. 90.00</p>
+        </a>
+
+        <a href="Producto_Detalle8.html" class="product-card" data-categoria="categoria2" data-talla="tallaL"
+          data-color="colorBlanco" data-material="materialAlgodon" data-precio="precio2">
+          <img src="img/CHALECO_UWO.png" alt="Chaleco de oveja UWO">
+          <h3>Chaleco de oveja UWO</h3>
+          <p>S/. 90.00</p>
+        </a>
+
+      </div>
+    </section>
+  </main>
+
 
 
   <!-- PIE DE PÁGINA -->
@@ -175,10 +194,10 @@
       <div class="footer-section">
         <h4>ACERCA DE</h4>
         <ul>
-                    <li><a href="preguntas.html">Preguntas frecuentes</a></li>
-                    <li><a href="preguntas.html">Políticas de privacidad</a></li>
-                    <li><a href="preguntas.html">Políticas de cookies</a></li>
-                    <li><a href="preguntas.html">Términos y condiciones</a></li>
+          <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+          <li><a href="preguntas.html">Políticas de privacidad</a></li>
+          <li><a href="preguntas.html">Políticas de cookies</a></li>
+          <li><a href="preguntas.html">Términos y condiciones</a></li>
         </ul>
       </div>
       <div class="footer-section">
@@ -188,6 +207,7 @@
           <li>Facebook: InkaTextil Oficial</li>
           <li>WhatsApp: 999-888-777</li>
           <li>Email: correo.inkatextil@gmail.com</li>
+          <li><a href="contacto.html">Contáctanos</a></li>
         </ul>
       </div>
       <div class="footer-section">
@@ -213,9 +233,13 @@
   </footer>
 
 
-    <script>
-        feather.replace()
-    </script>
+  <script>
+    feather.replace()
+  </script>
+  <script src="js/filtros.js">
+  </script>
+  <script src="js/buscar.js"></script>
+  
 </body>
 
 </html>

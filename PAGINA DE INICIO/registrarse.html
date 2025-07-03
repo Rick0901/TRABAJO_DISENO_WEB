@@ -7,7 +7,7 @@
   <title>Registrarse - Inka Textil</title>
   <link rel="stylesheet" href="Css/prueba1.css" />
   <link rel="stylesheet" href="Css/registro.css" />
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="css/sweetalert2.min.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
   <header>
     <div class="container-header">
       <div class="logo">
-        <a href="#"><img src="img/logo3.0.png" alt="Logo Inka Textil" /></a>
+        <a href="principal.html"><img src="img/logo3.0.png" alt="Logo Inka Textil" /></a>
       </div>
 
       <nav class="menu-below-logo">
@@ -55,8 +55,8 @@
 
 
       <div class="header-search">
-        <input type="text" placeholder="Buscar productos..." aria-label="Buscar productos" />
-        <button type="submit" aria-label="Buscar">🔍</button>
+        <input type="text" id="busqueda-producto" placeholder="Buscar productos..." aria-label="Buscar productos" />
+        <button id="boton-buscar" type="button" aria-label="Buscar">🔍</button>
       </div>
     </div>
   </header>
@@ -66,25 +66,25 @@
     <div class="registro-container">
       <div class="registro-left">
         <form>
-          <label>Nombre</label>
+          <label style="text-align: left;">Nombre</label>
           <input type="text" placeholder="MARCIANO" />
 
-          <label>Apellido</label>
+          <label style="text-align: left;">Apellido</label>
           <input type="text" placeholder="TERRICOLA" />
 
-          <label>Email</label>
+          <label style="text-align: left;">Email</label>
           <input type="email" placeholder="marcianoterricola@gmail.com" />
 
-          <label>Teléfono</label>
+          <label style="text-align: left;">Teléfono</label>
           <input type="text" placeholder="999888777" />
 
-          <label>Dirección</label>
+          <label style="text-align: left;">Dirección</label>
           <input type="text" placeholder="av.marte 001. urb vía láctea" />
 
-          <label>DNI</label>
+          <label style="text-align: left;">DNI</label>
           <input type="text" placeholder="12345678" />
 
-          <label>Contraseña</label>
+          <label style="text-align: left;">Contraseña</label>
           <input type="password" placeholder="Tu contraseña" />
         </form>
       </div>
@@ -140,6 +140,7 @@
           <li>Facebook: InkaTextil Oficial</li>
           <li>WhatsApp: 999-888-777</li>
           <li>Email: correo.inkatextil@gmail.com</li>
+          <li><a href="contacto.html">Contáctanos</a></li>
         </ul>
       </div>
       <div class="footer-section">
@@ -171,6 +172,8 @@
     <script src="js/registro.js">
       
     </script>
+    <script src="js/buscar.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
 </body>
 
 </html>

@@ -2,12 +2,12 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iniciar Sesión - Inka Textil</title>
-    <link rel="stylesheet" href="css/prueba1.css" />
-    <link rel="stylesheet" href="css/pedidos.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--cdn para enlazar y mostrar el sweet alert-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iniciar Sesión - Inka Textil</title>
+  <link rel="stylesheet" href="css/prueba1.css" />
+  <link rel="stylesheet" href="css/pedidos.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--cdn para enlazar y mostrar el sweet alert-->
 </head>
 
 <body>
@@ -15,7 +15,7 @@
   <header>
     <div class="container-header">
       <div class="logo">
-        <a href="#"><img src="img/logo3.0.png" alt="Logo Inka Textil" /></a>
+        <a href="principal.html"><img src="img/logo3.0.png" alt="Logo Inka Textil" /></a>
       </div>
 
       <nav class="menu-below-logo">
@@ -53,69 +53,72 @@
 
 
       <div class="header-search">
-        <input type="text" placeholder="Buscar productos..." aria-label="Buscar productos" />
-        <button type="submit" aria-label="Buscar">🔍</button>
+        <input type="text" id="busqueda-producto" placeholder="Buscar productos..." aria-label="Buscar productos" />
+        <button id="boton-buscar" type="button" aria-label="Buscar">🔍</button>
       </div>
     </div>
   </header>
 
 
 
-  <main class="pedidos-main">
-  <h1>Mis Pedidos</h1>
-  <div id="pedidos-lista" class="pedidos-lista">
+  <main class="pedidos-main" style="text-align: center;">
+    <h1>Mis Pedidos</h1>
+    <br>
+    <div id="pedidos-lista" class="pedidos-lista" style="text-align: left;">
 
-  </div>
-</main>
+    </div>
+  </main>
 
 
 
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-logo">
-                <img src="img/logo3.0.png" alt="Logo Inka Textil" />
-            </div>
-            <div class="footer-section">
-                <h4>ACERCA DE</h4>
-                <ul>
-                    <li><a href="preguntas.html">Preguntas frecuentes</a></li>
-                    <li><a href="preguntas.html">Políticas de privacidad</a></li>
-                    <li><a href="preguntas.html">Políticas de cookies</a></li>
-                    <li><a href="preguntas.html">Términos y condiciones</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>CANALES DE ATENCIÓN</h4>
-                <ul>
-                    <li>Instagram: @inkatextil</li>
-                    <li>Facebook: InkaTextil Oficial</li>
-                    <li>WhatsApp: 999-888-777</li>
-                    <li>Email: correo.inkatextil@gmail.com</li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>TUS PEDIDOS</h4>
-                <ul>
-                    <li><a href="pedidos.html">Pedidos</a></li>
-                    <li><a href="pedidos.html">Sigue tu pedido</a></li>
-                    <li><a href="preguntas.html">Cambios y devoluciones</a></li>
-                </ul>
-            </div>
-            <div class="footer-section suscribe">
-                <h4>SUSCRÍBETE</h4>
-                <p>Para recibir ofertas y novedades</p>
-                <form action="#" method="post">
-                    <input type="email" name="email" placeholder="Tu correo electrónico" required />
-                    <button type="submit">Suscribirse</button>
-                </form>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>Inkatextil ©2025 Todos los derechos reservados_Desarrollado por el grupo 04</p>
-        </div>
-    </footer>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="img/logo3.0.png" alt="Logo Inka Textil" />
+      </div>
+      <div class="footer-section">
+        <h4>ACERCA DE</h4>
+        <ul>
+          <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+          <li><a href="preguntas.html">Políticas de privacidad</a></li>
+          <li><a href="preguntas.html">Políticas de cookies</a></li>
+          <li><a href="preguntas.html">Términos y condiciones</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>CANALES DE ATENCIÓN</h4>
+        <ul>
+          <li>Instagram: @inkatextil</li>
+          <li>Facebook: InkaTextil Oficial</li>
+          <li>WhatsApp: 999-888-777</li>
+          <li>Email: correo.inkatextil@gmail.com</li>
+          <li><a href="contacto.html">Contáctanos</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>TUS PEDIDOS</h4>
+        <ul>
+          <li><a href="pedidos.html">Pedidos</a></li>
+          <li><a href="pedidos.html">Sigue tu pedido</a></li>
+          <li><a href="preguntas.html">Cambios y devoluciones</a></li>
+        </ul>
+      </div>
+      <div class="footer-section suscribe">
+        <h4>SUSCRÍBETE</h4>
+        <p>Para recibir ofertas y novedades</p>
+        <form action="#" method="post">
+          <input type="email" name="email" placeholder="Tu correo electrónico" required />
+          <button type="submit">Suscribirse</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Inkatextil ©2025 Todos los derechos reservados_Desarrollado por el grupo 04</p>
+    </div>
+  </footer>
 
-<script src="js/pedidos.js"></script>
+  <script src="js/pedidos.js"></script>
+  <script src="js/buscar.js"></script>
 </body>
 
 </html>

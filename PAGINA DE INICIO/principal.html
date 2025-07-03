@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
     <title>principal - Inka Textil</title>
     <link rel="stylesheet" href="css/inicio.css" />
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
     <header>
         <div class="container-header">
             <div class="logo">
-                <a href="#"><img src="img/logo3.0.png" alt="Logo Inka Textil" /></a>
+                <a href="principal.html"><img src="img/logo3.0.png" alt="Logo Inka Textil" /></a>
             </div>
 
             <nav class="menu-below-logo">
@@ -53,9 +54,10 @@
 
 
             <div class="header-search">
-                <input type="text" placeholder="Buscar productos..." aria-label="Buscar productos" />
-                <button type="submit" aria-label="Buscar">🔍</button>
-            </div>
+        <input type="text" id="busqueda-producto" placeholder="Buscar productos..." aria-label="Buscar productos" />
+        <button id="boton-buscar" type="button" aria-label="Buscar">🔍</button>
+      </div>
+
         </div>
     </header>
 
@@ -64,11 +66,12 @@
 
         <!-- Imagen principal tipo banner -->
         <div class="banner-principal">
-            <img src="img/Textil.jpg" alt="Banner de tela tradicional" />
+            <img src="img/banner.webp" alt="Banner de tela tradicional" />
         </div>
 
-        <section class="cta-oferta">
-            <div class="cta-contenido">
+        <section class="cta-oferta" style="max-width:1200px; margin:40px auto; padding:40px 20px;">
+            <div class="cta-contenido" style="animation: slideInLeft 1s ease-out;">
+
                 <h2>🎉 ¡Oferta Especial por Tiempo Limitado! 🎉</h2>
                 <p>Obtén un <strong>20% de descuento</strong> en tu primera compra. Usa el código
                     <strong>BIENVENIDO20</strong>.
@@ -78,29 +81,30 @@
         </section>
 
         <!-- Sección Categorías -->
-        <section class="categorias">
+        <section class="categorias"
+            style="max-width:1200px; margin:40px auto; padding:40px 20px; background-color:#dbbaa7; border-radius:16px; box-shadow:0 6px 16px rgba(0,0,0,0.1); text-align:center;">
             <h2>CATEGORÍAS</h2>
             <div class="grid">
                 <div class="item">
-                    <a href="accesorios.html">
+                    <a href="Productos.html">
                         <img src="img/accesorios.webp" alt="Accesorios">
                         <p>Accesorios</p>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="prendas.html">
+                    <a href="Productos.html">
                         <img src="img/prendas.jpeg" alt="Prendas">
                         <p>Prendas</p>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="artesania.html">
+                    <a href="Productos.html">
                         <img src="img/artesania.jpg" alt="Artesanía">
                         <p>Artesanía</p>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="regalos.html">
+                    <a href="Productos.html">
                         <img src="img/regalo.jpg" alt="Regalos">
                         <p>Regalos</p>
                     </a>
@@ -109,7 +113,9 @@
         </section>
 
         <!-- Sección Conócenos -->
-        <section class="conocenos">
+        <section class="conocenos"
+            style="max-width:1200px; margin:40px auto; padding:40px 20px; background-color:#dbbaa7; border-radius:16px; box-shadow:0 6px 16px rgba(0,0,0,0.1); text-align:center;">
+
             <h2>CONÓCENOS</h2>
             <div class="grid">
                 <div class="item">
@@ -119,19 +125,19 @@
                     </a>
                 </div>
                 <div class="item">
-                    <a href="mision.html">
+                    <a href="nosotros.html">
                         <img src="img/Mision.png" alt="Misión">
                         <p>Misión</p>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="vision.html">
+                    <a href="nosotros.html">
                         <img src="img/vision.png" alt="Visión">
                         <p>Visión</p>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="valores.html">
+                    <a href="nosotros.html">
                         <img src="img/valores.jpg" alt="Valores">
                         <p>Valores</p>
                     </a>
@@ -143,7 +149,9 @@
 
 
         <!-- Sección Participa -->
-        <section class="participa">
+        <section class="participa"
+            style="max-width:1200px; margin:40px auto; padding:40px 20px; background-color:#dbbaa7   ; border-radius:16px; box-shadow:0 6px 16px rgba(0,0,0,0.1); text-align:center;">
+
             <h2>PARTICIPA Y GANA</h2>
             <div class="cta-contenido">
                 <img src="img/cta2.png" alt="Oferta especial Inka Textil" class="cta-img">
@@ -174,6 +182,7 @@
                     <li>Facebook: InkaTextil Oficial</li>
                     <li>WhatsApp: 999-888-777</li>
                     <li>Email: correo.inkatextil@gmail.com</li>
+                    <li><a href="contacto.html">Contáctanos</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -201,7 +210,23 @@
     <script>
         feather.replace()
     </script>
+    <style>
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
 
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+
+    <script src="js/buscar.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/suscripcion.js"></script>
 </body>
 
 </html>

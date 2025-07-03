@@ -7,7 +7,7 @@
   <script src="https://unpkg.com/feather-icons"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
   <title>Preguntas fecuentes - Inka Textil</title>
-  <link rel="stylesheet" href="preguntas.css" />
+  <link rel="stylesheet" href="css/preguntas.css" />
 </head>
 
 <body>
@@ -15,7 +15,7 @@
   <header>
     <div class="container-header">
       <div class="logo">
-        <a href="#"><img src="img/logo3.0.png" alt="Logo Inka Textil" /></a>
+        <a href="principal.html"><img src="img/logo3.0.png" alt="Logo Inka Textil" /></a>
       </div>
 
       <nav class="menu-below-logo">
@@ -53,8 +53,8 @@
 
 
       <div class="header-search">
-        <input type="text" placeholder="Buscar productos..." aria-label="Buscar productos" />
-        <button type="submit" aria-label="Buscar">🔍</button>
+        <input type="text" id="busqueda-producto" placeholder="Buscar productos..." aria-label="Buscar productos" />
+        <button id="boton-buscar" type="button" aria-label="Buscar">🔍</button>
       </div>
     </div>
   </header>
@@ -171,7 +171,7 @@
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-logo">
-        <img src="imagenes_p/logo3.0.png" alt="Logo Inka Textil" />
+        <img src="img/logo3.0.png" alt="Logo Inka Textil" />
       </div>
       <div class="footer-section">
         <h4>ACERCA DE</h4>
@@ -189,6 +189,7 @@
           <li>Facebook: InkaTextil Oficial</li>
           <li>WhatsApp: 999-888-777</li>
           <li>Email: correo.inkatextil@gmail.com</li>
+          <li><a href="contacto.html">Contáctanos</a></li>
         </ul>
       </div>
       <div class="footer-section">
@@ -216,7 +217,8 @@
   <script>
     feather.replace()
   </script>
-  <script src="preguntas.js"></script>
+  <script src="js/preguntas.js"></script>
+  <script src="js/buscar.js"></script>
 </body>
 
 </html>
